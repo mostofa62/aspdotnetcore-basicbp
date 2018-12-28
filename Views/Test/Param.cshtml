@@ -1,0 +1,15 @@
+@{
+    var Message = ViewData["Message"];
+    ViewData["Title"] = Message;
+}
+<div class="well text-center">
+
+    <h2>@Message</h2>
+    <div class="text-center">
+        <ul class="list-group">
+        <li class="list-group-item">One can use <code>asp-route-(name of param)</code> , to define route param</li>
+        </ul>
+
+    </div>
+
+</div>
