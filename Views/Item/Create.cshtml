@@ -1,0 +1,18 @@
+@model Items
+@{
+
+    ViewData["Title"] = "Create Item";
+}
+
+<form asp-controller = "Item" asp-action ="Create" method="post">
+
+    Full Name <input asp-for="Name" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <button type="submit">Submit</button>
+
+</form>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
